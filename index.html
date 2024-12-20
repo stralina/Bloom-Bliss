@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kurale&display=swap" rel="stylesheet">
+    <title>Bloom Bliss</title>
+</head>
+<body>
+    <header>
+        <ul class="buttons">
+            <li> <a class="button" href="#o-nas"> О НАС </a></li>
+            <li> <a class="button" href="#bouqets"> БУКЕТЫ </a>
+                <ul class="submenu">
+                    <li> <a href="broken-page..html"> МОНОБУКЕТЫ </a></li>
+                    <li> <a href="broken-page..html"> ДУО И ТРИО БУКЕТЫ </a></li>
+                    <li> <a href="broken-page..html"> ЦВЕТОЧНЫЕ КОРЗИНЫ</a></li>
+                    <li> <a href="broken-page..html"> АВТОРСКИЕ БУКЕТЫ </a></li>
+                    <li> <a href="broken-page..html"> БУКЕТЫ НЕВЕСТЫ </a></li>
+                    <li> <a href="broken-page..html"> БУКЕТЫ И КОМПОЗИЦИИ <br> ИЗ РОЗ</a></li>
+                </ul>   
+            </li>
+            <li> <img src="images/logo.jpg"> </li>
+            <li> <a class="button" href="#services"> УСЛУГИ </a></li>
+            <li> <a class="button" href="#contacts"> КОНТАКТЫ </a></li>
+        </ul> 
+    </header>
+    <div class="backgr_flowers">
+        <div class="imageflowers">
+            <p class="stdname"> BLOOM BLISS </p>
+            <p class="studio"> СТУДИЯ ЦВЕТОВ </p>
+            <p class="slogan"> С любовью к каждому лепестку </p>
+            <p class="introduction"> Добро пожаловать в нашу студию цветов "BLOOM BLISS" в Москве! <br>
+                  Мы верим, что цветы могут поведать историю,
+                  рассказать о чувствах и передать настроение. Наша команда профессиональных
+                  флористов поработает с вами, чтобы понять ваши желания и идеи, а затем 
+                  воплотить их в жизнь. Мы используем только самые свежие и качественные цветы, 
+                  заботясь о том, чтобы каждый заказ был выполнен на высшем уровне.</p>
+            <a href="#bouqets"><button class="order-bouqet"> ЗАКАЗАТЬ БУКЕТ </button></a>
+        </div>
+    </div>
+    <p id="o-nas" class="sections"> О НАС</p>
+    <div class="square1">
+        <img src="images/full-shot-woman-holding-flowers_23-2149591626.jpg">
+        <div class="about-us-text">   
+            <h2>Почему выбирают именно нас?</h2>
+            <h3>Индивидуальный подход к каждому клиенту</h3> 
+            <p>Мы тщательно изучаем желания каждого клиента и создаём уникальные букеты и композиции, полностью соответствующие вашим предпочтениям.</p>
+
+            <h3>Широкий ассортимент </h3> 
+            <p>У нас есть всё: от классических монобукетов до экстравагантных композиций. Мы рады дарить Вам настроение в любые моменты — от неловких признаний до свадеб.</p>
+
+            <h3>Качество и свежесть  </h3>
+            <p>Мы работаем только с проверенными поставщиками и гарантируем, что наши цветы высокого качества и первой свежести. Каждая композиция создается вручную с заботой и любовью к каждому лепестку.</p>
+
+            <h3>Профессионализм и опыт </h3>
+            <p>Наша команда состоит из талантливых и опытных флористов, которые следят за всеми трендами и знают все секреты создания идеальных композиций. </p>
+
+            <h3>Удобство заказа и быстрая доставка </h3>
+            <p>Вы можете легко заказать цветы через наш сайт или по телефону. Мы гарантируем быструю и надежную доставку в любую точку Москвы.</p>
+        </div>
+    </div>
+    
+    <div class="icons">
+        <div class="icon1">
+            <img width="100" height="100" src="https://img.icons8.com/ios/100/FFFFFF/in-transit--v1.png" alt="in-transit--v1"/>
+            <p> ДОСТАВКА ДО 60 МИНУТ </p>
+        </div>
+        <div class="icon2">
+            <img width="100" height="100" src="https://img.icons8.com/parakeet-line/100/FFFFFF/close-up-mode.png" alt="close-up-mode"/>
+            <p> ТОЛЬКО СВЕЖИЕ ЦВЕТЫ  </p>
+        </div>
+            <div class="icon3">
+            <img width="100" height="100" src="https://img.icons8.com/external-outline-lafs/100/FFFFFF/external-ic_gift-menu-outline-lafs.png" alt="external-ic_gift-menu-outline-lafs"/>
+            <p> В ПОДАРОК К ЗАКАЗУ ОТКРЫТКА И ШОКОЛАД </p>
+        </div>
+    </div>
+    
+    <div class="elements">
+        <p id="bouqets" class="sections"> БУКЕТЫ </p> 
+        <div class="cart-icon">
+            <img src="images/icon-shopping-cart.png" alt="Корзина" width="50">
+            <span class="cart-count" id="cartCount">0</span>
+        </div>
+    </div>
+
+    <div class="square">
+        <div class="product-card">
+            <img src="images/фарфоровые-розы.jpg" alt="Фарфоровые розы">
+            <p> Фарфоровые розы <br> от 2600₽</p>
+            <button class="order"> ЗАКАЗАТЬ</button>
+            <button class="in-cart" onclick="addToCart()"> В КОРЗИНУ</button>
+        </div>
+        <div class="product-card">
+            <img src="images/пионы.jpeg" alt="Пионы">
+            <p> Пионы <br> от 4100₽</p>
+            <button class="order"> ЗАКАЗАТЬ</button>
+            <button class="in-cart" onclick="addToCart()"> В КОРЗИНУ</button>
+        </div>
+        <div class="product-card">
+            <img src="images/лилии.jpeg" alt="Лилии">
+            <p> Лилии <br> от 4500₽</p>
+            <button> ЗАКАЗАТЬ</button>
+            <button class="in-cart" onclick="addToCart()"> В КОРЗИНУ</button>
+        </div>
+        <div class="product-card">
+            <img src="images/сухоцветы.jpeg" alt="Сухоцветы">
+            <p> Сухоцветы <br> от 2000₽</p>
+            <button class="order"> ЗАКАЗАТЬ</button>
+            <button  class="in-cart" onclick="addToCart()"> В КОРЗИНУ</button>
+        </div>
+    </div>
+    <a href="products.html"><button class="more"> Больше.. </button></a>
+
+    <script src="js/javascript.js"></script>
+
+    <p id="services" class="sections"> УСЛУГИ </p>
+    <div class="square3">
+        <div class="service-1">
+            <p> ОЗЕЛЕНЕНИЕ <br> РЕСТОРАНОВ\КАФЕ</p>
+        </div>
+        <div class="service-2">
+            <p> СВАДЕБНОЕ <br> ОФОРМЛЕНИЕ</p>
+        </div>
+        <div class="service-3">
+            <p> ИНТЕРЬЕРНОЕ <br> ОЗЕЛЕНЕНИЕ</p>
+        </div>
+    </div>
+    <a href="services.html"><button class="more"> Заказать </button></a>
+    
+    <div class="map-form">
+        <div class="map">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A99b50e8d08e593b31ec2db00916f7030dbeeb9709ca972dced3d0a5f13a68376&amp;source=constructor" width="560" height="400" frameborder="0"></iframe>
+        </div>
+    
+        <fieldset>
+            <h2>Готовы ответить на ваши вопросы</h2>
+            
+            <label>
+                Ваше имя: <input type="text" class="name">
+            </label>
+            <br>
+            
+            <div id="emailFields">
+                <h3>Укажите вашу почту и вопрос:</h3>
+                <label>Электронная почта:</label>
+                <input type="email" class="email" required>
+                <br>
+                <br>
+                <textarea class="question" placeholder="Ваш вопрос" required></textarea>
+                <br><br>
+                <button id="subButton" type="button">Отправить</button>
+                <div id="respseMessage" style="display: none;">Обязательно ответим на ваши вопросы</div>
+            </div>
+            <br>
+        </fieldset>
+    </div>
+
+    <footer id="contacts">
+        <nav class="buttons-footer">
+            <ol> <a class="button-footer" href="#o-nas"> О НАС </a></ol>
+            <ol> <a class="button-footer" href="#bouqets"> БУКЕТЫ </a></ol>
+            <ol> <a class="button-footer" href="#services"> УСЛУГИ </a></ol>
+            <ol> <a class="button-footer" href="#contacts"> КОНТАКТЫ </a></ol>
+        </nav> 
+        <img class="logo-footer" src="images/logotype.jpg">
+        <p class="copyright"> ©️ 2024 Студия цветов Bloom Bliss</p>
+        <div class="contact-us">
+            <p> Наши конакты: </p>
+            <div class="phone-number">
+                <img width="30" height="30" src="https://img.icons8.com/ios/100/FFFFFF/phone--v1.png" alt="phone--v1"/>
+                <p> +7 (9xx)xxx-xx-xx</p>
+            </div>
+            
+            <div class="phone-number">
+                <img width="30" height="30" src="https://img.icons8.com/ios/100/FFFFFF/mail.png" alt="mail"/>
+                <p> bloom.bliss@mail.ru </p>
+            </div>
+
+            <br>
+            <a href="https://wa.me/79690177827"><img width="50" height="50" src="https://img.icons8.com/color/480/whatsapp--v1.png" alt="whatsapp--v1"/></a> 
+            <a href="https://t.me/cvzwll"><img width="50" height="50" src="https://img.icons8.com/color/480/telegram-app--v1.png" alt="telegram-app--v1"/></a>
+            <img width="55" height="55" src="https://img.icons8.com/fluency/100/instagram-new.png" alt="instagram-new"/>
+            <img width="50" height="50" src="https://img.icons8.com/color/48/youtube-play.png" alt="youtube-play"/>
+        </div>
+        
+    </footer>
+    <script src="js/javascripts.js"></script>
+</body>
+</html>

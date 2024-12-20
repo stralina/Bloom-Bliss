@@ -1,0 +1,622 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #CDB0B0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding:0;
+}
+
+header {
+    width: 100%;
+    height: 75px;
+    margin: 0;
+    padding: 0;
+    background-color:#8B7473;
+    padding-bottom: 20px;
+}
+
+.kurale-regular {
+    font-family: "Kurale", serif;
+    font-weight: 400;
+    font-style: normal;
+  }  
+
+.buttons {
+    margin-top: 0px;
+    text-align: center;
+    padding-left: 70px;
+    position: relative;
+}
+
+.button {
+    list-style-type: none;
+    text-align: center;
+    margin-top: 0px;
+}
+
+.button:hover {
+    text-shadow: 1px 1px 2px black, 0 0 1em rgb(255, 255, 255); 
+    color: #FEFCFC;
+    transition: 0.1s;
+}
+
+li {
+    font-family: "Kurale", serif;
+    margin-left: 25px;
+    margin-right: 25px;
+    display: inline;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 28.13px;
+    text-align: center; 
+    text-decoration-skip-ink: none;
+}
+     
+a {
+    color: #FEFCFC;
+    text-decoration: none;
+}
+
+.buttons img {
+    height: 75px;
+    width: 130px;
+}
+
+.submenu {
+    visibility: hidden; 
+    opacity: 0; 
+    position: absolute;
+    padding: 0;
+    list-style-type: none;
+    margin: 24%;
+    text-align: right; 
+    transition: opacity 0.3s ease;
+    z-index: 10; 
+    background-color: #8b7473c1;
+}
+
+li:hover .submenu {
+    display: block; 
+    margin-top: 0; 
+    visibility: visible; 
+    opacity: 1;    
+    transition: opacity 0.2s ease; 
+}
+
+.buttons ul.submenu a:hover{
+    transition: 10s;
+}
+
+.submenu li {
+    font-size: 20px; 
+    display: block; 
+    text-align: left;
+}
+
+.submenu a { 
+    text-decoration: none;
+    padding: 0; 
+}
+
+.submenu li:hover {
+    text-decoration: underline 1px white;   
+}
+
+.cart-icon {
+    position: relative;
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+}
+
+.cart-count {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: #6E4C47;
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 14px;
+}  
+
+.elements {
+    display: flex;
+    margin-top: 10px;
+}
+
+.backgr_flowers {
+    background-color: #EDDDDD;
+    height: 540px;
+    width: 100%;
+    padding-top: 1px;
+    padding-bottom: 50px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.imageflowers{
+    background-image: url(images/fiowers_background\(1\).jpeg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 520px;
+    margin: 0;
+    position: relative; 
+    margin-top: 10px;
+}
+
+.stdname {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    margin-bottom: 0px;
+    font-family: "Kurale", serif;
+}
+
+.studio {
+    margin-top: 0px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: "Kurale", serif;
+}
+
+.slogan {
+    color: white;
+    margin-top: 30px;
+    margin-left: 70px;
+    font-size: 40px;
+    font-family: "Kurale", serif;
+}
+
+.order-bouqet {
+    background-color:#FBEFEF ;
+    text-align: center;
+    font-family: "Kurale", serif;
+    font-size: large;
+    color: #8B7473;
+    border-radius: 80px;
+    border: 0px;
+    height: 60px;
+    width: 190px;
+    margin-left: 190px;
+    margin-top: 30px;
+    transition: 0.2s;
+}
+
+.order-bouqet:hover {
+    color: #FBEFEF;
+    background-color: #00000000;
+    border: 1px solid white;
+}
+
+.introduction {
+    color: white;
+    width: 750px;
+    line-height: 1.5;
+    margin-left: 20px;
+    text-indent: 45px;
+    font-size: large;
+}
+
+.sections {
+    color: white;
+    font-family: "Kurale", serif;
+    font-size: 40px;
+    font-weight: 400px;
+    margin: 0;
+    padding-left: 140px;
+    padding-right: 10px;
+}
+
+.square1 {
+    background-color: #EDDDDD;
+    height: 570px;
+    width: 1200px;
+    margin: auto;
+    border-radius: 5px;
+    display: flex;
+    padding-top: 30px;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.265);
+}
+
+.square {
+    background-color: #EDDDDD;
+    height: 370px;
+    width: 1200px;
+    margin: auto;
+    border-radius: 5px;
+    display: flex;
+    padding-top: 30px;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.265);
+}
+
+.square3 {
+    background-color: #EDDDDD;
+    height: 370px;
+    width: 1200px;
+    margin: auto;
+    border-radius: 5px;
+    display: flex;
+    padding-top: 30px;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.265);
+    justify-content: center;
+    text-align: center;
+}
+
+.more {
+    width: 150px;
+    height: 30px;
+    background-color: #EDDDDD;
+    color: #6E4C47;
+    font-size: large;
+    font-family: "Kurale", serif;
+    border-radius: 5px;
+    border: 0px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    text-align: center;
+    margin-left: 1165px;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.265);
+}
+
+.more:hover {
+    background-color: #8B7473 ;
+    color:#EDDDDD ;
+    transition: 0.1s;
+}
+
+.square1 img {
+    height: 540px;
+    margin-left: 20px;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.265);
+}
+
+.about-us-text {
+    margin-left: 20px;
+}
+
+.about-us-text h3 {
+    color: #6E4C47;
+    font-family: 'Kurale', serif;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.about-us-text h2 {
+    color: #6E4C47;
+    margin-top: 0px;
+    font-family: 'Kurale', serif;
+}
+
+.about-us-text p {
+    color: #776362;
+}
+
+.product-card {
+    width: 250px;
+    height: 340px;
+    background-color: white;
+    margin-left: 40px; 
+}
+
+.product-card img {
+    width: 250px;
+    height: 250px;
+    margin-top: 10px;
+}
+
+.product-card:hover {
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.265);
+    transition: 0.1s;
+}
+
+.product-card p {
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-bottom: 0px;
+    color: rgb(0, 0, 0);
+    font-size: medium;
+}
+
+.product-card button {
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 0px;
+    margin-top: 5px;
+    background-color: #e3cccc;
+    color: white;
+    border: 0px;
+    height: 20px;
+    width: 100px;
+    border-radius: 3px;
+}
+
+.product-card button:hover {
+    background-color: #e3cccc;
+    color: white;
+    opacity: 50%;
+    transition: 0.1s;
+}
+
+.product-card button:active {
+    transition: 0.1s;
+    background-color: white;
+    color: #e3cccc;
+    border: 1px solid;
+}
+
+.icon1, .icon2, .icon3 {
+    display: flex;
+}
+
+.icons {
+    margin-left: 120px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.icons p {
+    color: white;
+    font-family: 'Kurale', serif;
+    margin-left: 30px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.service-1 {
+    background-image: url(images/озеленение-1.jpg);
+    width: 350px;
+    height: 350px;
+    background-position: center;
+    background-size: cover;
+    margin: 0 20px;
+}
+
+.service-2 {
+    background-image: url(images/свадебное-оформление.jpg);
+    width: 350px;
+    height: 350px;
+    background-position: center;
+    background-size: cover;
+    margin: 0 20px;
+}
+
+.service-3 {
+    background-image: url(images/интерьер.jpg);
+    width: 350px;
+    height: 350px;
+    background-position: center;
+    background-size: cover;
+    margin: 0 20px;
+}
+
+.service-1:hover, .service-2:hover, .service-3:hover {
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.265);
+    transition: 0.1s;
+}
+
+.square3 p {
+    color: white;
+    margin-top: 150px;
+    font-size: larger;
+    font-family: "Kurale", serif;
+}
+
+.services-fieldset {
+    background-color: #EDDDDD;
+    border: 0px;
+    width: 400px;
+    border-radius: 5px;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.265);
+    margin-left: 490px;
+    margin-top: 20px;
+}
+
+.services-fieldset p {
+    text-align: center;
+    color: #6E4C47;
+    font-size: large;
+}
+
+.map {
+    width: 580px;
+    height: 415px;
+    background-color: #EDDDDD;
+    text-align: center;
+    padding-top: 15px;
+    margin-left: 150px;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.265);
+    border-radius: 5px;
+}
+
+fieldset {
+    background-color: #EDDDDD;
+    border: 0px;
+    width: 400px;
+    border-radius: 5px;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.265);
+    margin-left: 100px; 
+}
+
+fieldset h3 {
+    font-family: 'Kurale', serif;
+    color: #6E4C47;
+}
+
+fieldset h2 {
+    font-family: 'Kurale', serif;
+    color: #6E4C47;
+    text-align: center;
+}
+
+label {
+    font-size: large;
+}
+
+input {
+    width: 100%;
+    height: 20px;
+    border-radius: 5px;
+    border: 1px solid #6E4C47;
+}
+
+textarea {
+    width: 100%;
+    height: 70px;
+    border-radius: 5px;
+    border: 1px solid #6E4C47;
+    font-size: large
+}
+
+fieldset button {
+    height: 60px;
+    width: 425px;
+    background-color: #8B7473;
+    color: white;
+    border-radius: 5px;
+    font-family: 'Kurale', serif;
+    font-size: large;
+    font-weight: bolder;
+    border: 0px;
+}
+
+fieldset button:hover {
+    opacity: 80%;
+    transition: 0.1s;
+}
+
+fieldset button:active {
+    background-color: #EDDDDD;
+    color: #6E4C47;
+    border: 2px solid #6E4C47;
+    transition: 0.1s;
+}
+
+#respseMessage, #responseMessage{
+    color: #6E4C47;
+    text-align: center;
+    font-family: 'Kurale', serif;
+    font-size: large;
+    margin-top: 10px;
+}
+
+.map-form {
+    display: flex;
+}
+
+footer {
+    margin-top: 50px;
+    background-color: #6E4C47;
+    height: 230px;
+    width: 100%;
+    display: flex;
+}
+
+.logo-footer {
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    margin-top: 40px;
+    margin-left: 20px;
+    border: 1px solid white;
+    margin-right: 300px;
+}
+
+.phone-number {
+    display: flex;
+}
+
+.copyright {
+    color: white;
+    margin-top: 100px;
+}
+
+.contact-us {
+    margin-left: 300px;
+    text-align: center;
+    justify-content: end;
+    margin-top: 30px;
+}
+
+.contact-us p {
+    font-family: 'Kurale', serif;
+    font-size: larger;
+    color: white;
+    margin: auto;
+    padding-left: 10px;
+}
+
+ol {
+    padding-top: 20px;
+}
+
+.buttons {
+    margin-top: 0px;
+    text-align: center;
+}
+
+.button-footer {
+    list-style-type: none;
+    text-align: center;
+    margin-top: 0px;
+}
+
+.button-footer:hover {
+    text-decoration: underline;
+    transition: 0.1s;
+}
+
+.square-products {
+    background-color: #EDDDDD;
+    height: 370px;
+    width: 1200px;
+    margin: auto;
+    border-radius: 5px 5px 0px 0px;
+    display: flex;
+    padding-top: 30px;
+}
+
+.square-products2 {
+    background-color: #EDDDDD;
+    height: 370px;
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    padding-top: 0px; 
+}
+
+.products-more {
+    background-color: #8B7473;
+    height: 30px;
+    width: 1200px;
+    margin: auto;
+    padding-top: 0px;
+    border-radius: 0px 0px 5px 5px;
+    text-align: center;
+    padding-top: 10px;
+    font-size: larger;
+}
+
+.products-more:hover {
+    background-color: #6E4C47;
+    transition: 0.3s;
+}
+
+h1 {
+    font-family: 'Kurale', serif;
+    font-size: 90px;
+    color: #6E4C47; 
+    text-align: center;
+    padding: 5% 0;
+}
+
+
+
+
+
